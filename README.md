@@ -24,6 +24,7 @@
 - [Future Enhancements](#future-enhancements)
 - [Author](#author)
 
+
 # Overview
 
 Artificial Intelligence has transformed the way modern e-commerce platforms understand and recommend products. Traditional keyword-based search systems often fail to capture the semantic meaning of products, resulting in inaccurate search results and poor customer experience.
@@ -57,7 +58,6 @@ Traditional keyword-based retrieval methods often fail because they cannot under
 
 This project addresses these limitations by utilizing **OpenAI CLIP embeddings**, which map both images and text into a shared feature space, enabling intelligent product understanding and retrieval.
 
----
 
 # Objectives
 
@@ -71,7 +71,6 @@ The primary objectives of this project are:
 - Enable reverse product search using natural language text queries.
 - Demonstrate practical applications of multimodal embeddings in e-commerce.
 
----
 
 # Key Features
 
@@ -81,7 +80,6 @@ The system processes fashion product images using the CLIP image encoder to gene
 
 Unlike traditional image classification techniques, CLIP understands the contextual relationship between visual concepts, enabling richer feature representations.
 
----
 
 ## 2. Visual Similarity Search
 
@@ -89,7 +87,6 @@ The generated image embeddings are compared using cosine similarity to identify 
 
 This enables users to discover related products without relying on manually assigned categories.
 
----
 
 ## 3. Smart Product Recommendation Engine
 
@@ -105,7 +102,6 @@ Example:
 
 This feature demonstrates how AI can improve cross-selling strategies in online shopping platforms.
 
----
 
 ## 4. Unique Product Catalog Creation
 
@@ -115,7 +111,6 @@ The notebook compares image embeddings using cosine similarity and groups produc
 
 This helps create a cleaner and more organized product catalog.
 
----
 
 ## 5. Reverse Product Search
 
@@ -131,7 +126,6 @@ The system converts the text into a CLIP embedding and retrieves the most semant
 
 This demonstrates the power of multimodal learning by enabling seamless image-text retrieval.
 
----
 
 # Technology Stack
 
@@ -148,7 +142,6 @@ This demonstrates the power of multimodal learning by enabling seamless image-te
 | Similarity Measurement  | Cosine Similarity                     |
 | Dataset                 | Fashion Product Images Small (Kaggle) |
 
----
 
 # Project Highlights
 
@@ -161,7 +154,6 @@ This demonstrates the power of multimodal learning by enabling seamless image-te
 - End-to-end implementation in Jupyter Notebook
 - Scalable architecture suitable for modern e-commerce applications
 
----
 
 # System Architecture
 
@@ -199,7 +191,6 @@ Similarity Search     Duplicate Detection     Recommendation Engine
 
 The architecture enables semantic understanding instead of relying solely on manually assigned labels or keywords.
 
----
 
 # Project Workflow
 
@@ -223,7 +214,6 @@ Each product consists of:
 
 These images serve as the input for generating semantic embeddings.
 
----
 
 ## Step 2 – Image Preprocessing
 
@@ -238,7 +228,6 @@ Typical preprocessing operations include:
 
 This ensures compatibility with the CLIP image encoder.
 
----
 
 ## Step 3 – Image Embedding Generation
 
@@ -260,7 +249,6 @@ Running Shoe
 
 Every product image is represented by one embedding vector.
 
----
 
 ## Step 4 – Feature Database Creation
 
@@ -272,7 +260,6 @@ Instead of comparing images pixel-by-pixel, the system compares their embedding 
 
 This significantly improves retrieval speed and semantic understanding.
 
----
 
 ## Step 5 – Similar Product Retrieval
 
@@ -287,7 +274,6 @@ the notebook
 
 The retrieved products are visually and semantically similar to the uploaded product.
 
----
 
 ## Step 6 – Smart Product Recommendation
 
@@ -319,7 +305,6 @@ Recommended Products
 
 This feature demonstrates how recommendation systems improve customer shopping experiences.
 
----
 
 ## Step 7 – Duplicate Product Detection
 
@@ -345,7 +330,6 @@ Blue Shirt
 
 This process reduces redundancy and creates a cleaner product catalog.
 
----
 
 ## Step 8 – Reverse Product Search
 
@@ -365,7 +349,6 @@ The generated embedding is then compared with stored image embeddings to retriev
 
 This demonstrates multimodal retrieval using a shared embedding space.
 
----
 
 # Understanding OpenAI CLIP
 
@@ -391,7 +374,6 @@ This enables tasks such as:
 
 without training a task-specific classifier.
 
----
 
 ## Why CLIP?
 
@@ -433,7 +415,6 @@ This representation can then be compared with
 
 making CLIP extremely powerful for retrieval systems.
 
----
 
 # Image Embeddings
 
@@ -459,7 +440,6 @@ Embedding Vector
 
 Images representing similar products generate embeddings that are close together in the vector space.
 
----
 
 # Text Embeddings
 
@@ -512,7 +492,6 @@ The notebook uses cosine similarity for:
 - Duplicate product detection
 - Reverse product search
 
----
 
 # Dataset
 
@@ -536,7 +515,6 @@ Each product consists of:
 
 The dataset provides sufficient diversity for evaluating semantic retrieval and recommendation techniques.
 
----
 
 # Repository Structure
 
@@ -552,7 +530,6 @@ AI-Powered-Product-Intelligence-System/
 └── README.md
 ```
 
----
 
 # Installation
 
@@ -565,7 +542,6 @@ Before running this project, ensure that the following software is installed on 
 
 The project is implemented entirely in a Jupyter Notebook and does not require a separate web framework.
 
----
 
 ## Clone the Repository
 
@@ -579,7 +555,6 @@ Navigate to the project directory:
 cd AI-Powered-Product-Intelligence-System
 ```
 
----
 
 ## Install Required Libraries
 
@@ -591,7 +566,6 @@ pip install git+https://github.com/openai/CLIP.git
 pip install numpy pandas matplotlib pillow scikit-learn
 ```
 
----
 
 ## Download the Dataset
 
@@ -599,7 +573,6 @@ Download the **Fashion Product Images Small** dataset from Kaggle.
 
 After downloading, organize the dataset in a directory accessible by the notebook and update the dataset paths if required.
 
----
 
 ## Running the Notebook
 
@@ -608,7 +581,6 @@ After downloading, organize the dataset in a directory accessible by the noteboo
 3. Run all cells sequentially.
 4. The notebook will automatically perform each stage of the product intelligence pipeline.
 
----
 
 # Notebook Walkthrough
 
@@ -620,7 +592,6 @@ The notebook is organized into logical sections that demonstrate the complete pr
 - Configure the runtime environment.
 - Load the OpenAI CLIP model.
 
----
 
 ## Dataset Loading
 
@@ -628,7 +599,6 @@ The notebook is organized into logical sections that demonstrate the complete pr
 - Read product metadata.
 - Verify image availability.
 
----
 
 ## Image Embedding Generation
 
@@ -636,7 +606,6 @@ Each product image is processed through the CLIP Image Encoder.
 
 The resulting embeddings are stored for later similarity computations.
 
----
 
 ## Similar Product Retrieval
 
@@ -646,7 +615,6 @@ The notebook retrieves visually similar products by:
 - Comparing it with dataset embeddings.
 - Ranking products using cosine similarity.
 
----
 
 ## Smart Product Recommendation
 
@@ -670,7 +638,6 @@ Recommendations
 • Water Bottle
 ```
 
----
 
 ## Duplicate Product Detection
 
@@ -678,7 +645,6 @@ Products with highly similar embeddings are grouped together.
 
 This demonstrates how AI can automatically remove duplicate catalog entries.
 
----
 
 ## Reverse Product Search
 
@@ -686,7 +652,6 @@ Natural language queries are encoded using the CLIP Text Encoder.
 
 The generated text embedding is matched against image embeddings to retrieve relevant products.
 
----
 
 # Implementation Details
 
@@ -696,7 +661,6 @@ Images are converted into semantic embeddings using OpenAI CLIP.
 
 Unlike conventional CNN classifiers, CLIP produces embeddings that capture contextual information rather than fixed class labels.
 
----
 
 ## Similarity Computation
 
@@ -706,7 +670,6 @@ This metric compares the orientation of embedding vectors rather than their magn
 
 Higher cosine similarity indicates stronger semantic similarity.
 
----
 
 ## Recommendation Logic
 
@@ -716,7 +679,6 @@ Unlike similarity search, recommendations focus on products that are typically p
 
 This simulates cross-selling techniques used by modern e-commerce platforms.
 
----
 
 ## Duplicate Detection
 
@@ -726,7 +688,6 @@ If the similarity score exceeds the chosen threshold, the products are grouped i
 
 This reduces redundancy and improves catalog quality.
 
----
 
 ## Reverse Search
 
@@ -734,7 +695,6 @@ The CLIP Text Encoder converts user queries into semantic embeddings.
 
 These embeddings are compared with image embeddings to retrieve visually matching products without requiring an uploaded image.
 
----
 
 # Results
 
@@ -750,7 +710,6 @@ The notebook successfully demonstrates the following functionalities:
 
 The results highlight the effectiveness of multimodal embeddings for solving common challenges in e-commerce search and catalog management.
 
----
 
 # Applications
 
@@ -766,7 +725,6 @@ This project can be applied across multiple domains, including:
 - AI-powered shopping assistants
 - Intelligent catalog management
 
----
 
 # Limitations
 
@@ -777,7 +735,6 @@ Although the notebook demonstrates the effectiveness of CLIP embeddings, several
 - Duplicate detection relies on a manually selected similarity threshold.
 - The notebook processes products sequentially and is not optimized for large-scale production environments.
 
----
 
 # Future Enhancements
 
@@ -793,7 +750,6 @@ Several improvements can further enhance the system:
 - Integration with cloud vector databases such as Pinecone, Weaviate, or Milvus.
 - Large Language Model integration for intelligent product descriptions.
 
----
 
 # Author
 
