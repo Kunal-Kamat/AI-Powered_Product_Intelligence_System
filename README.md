@@ -469,7 +469,6 @@ directly.
 
 This forms the foundation of Reverse Product Search.
 
----
 
 # Cosine Similarity
 
