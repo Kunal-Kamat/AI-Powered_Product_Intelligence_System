@@ -1,7 +1,5 @@
 # AI-Powered Product Intelligence System using OpenAI CLIP
 
----
-
 ## Table of Contents
 
 - [Overview](#overview)
@@ -25,8 +23,6 @@
 - [Limitations](#limitations)
 - [Future Enhancements](#future-enhancements)
 - [Author](#author)
-
----
 
 # Overview
 
