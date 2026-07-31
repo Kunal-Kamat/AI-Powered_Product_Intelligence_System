@@ -42,7 +42,6 @@ The notebook demonstrates how multimodal embeddings can be applied to solve comm
 
 The project has been implemented entirely in Python using Jupyter Notebook and utilizes the Fashion Product Images dataset from Kaggle.
 
----
 
 # Problem Statement
 
